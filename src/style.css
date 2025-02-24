@@ -1,0 +1,15 @@
+#visualization {
+  border: 1px solid lightgray;
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  display: none;
+  z-index: 1000;
+}
