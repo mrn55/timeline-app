@@ -7,10 +7,27 @@ const items = new vis.DataSet(
   ]
 );
 
+var groups = [
+  {
+    id: 1,
+    content: 'Default'
+    // Optional: a field 'className', 'style', 'order', [properties]
+  },
+  {
+    id: 2,
+    content: 'Me',
+    nestedGroups: [3]
+  },
+  {
+    id: 3,
+    content: "Work"
+  }
+];
+
 // Initialize timeline
 const container = document.getElementById("visualization");
 const options = {};
-const timeline = new vis.Timeline(container, items, options);
+const timeline = new vis.Timeline(container, items, groups, options);
 
 // Tooltip element
 const tooltip = document.getElementById("tooltip");
